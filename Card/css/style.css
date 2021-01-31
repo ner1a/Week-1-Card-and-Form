@@ -29,8 +29,8 @@ body {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   height: 100%;
   background-color: #f3e4f7;
-  -webkit-transition: 100ms;
-  transition: 100ms;
+  -webkit-transition: 150ms;
+  transition: 150ms;
 }
 
 .cards__card:hover {
@@ -77,8 +77,8 @@ body {
   text-transform: uppercase;
   font-size: medium;
   font-weight: 400;
-  -webkit-transition: 100ms;
-  transition: 100ms;
+  -webkit-transition: 150ms;
+  transition: 150ms;
 }
 
 .cards__read-more:hover, .cards__read-more:focus {
