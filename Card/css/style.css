@@ -52,6 +52,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: small;
+  line-height: 20px;
 }
 
 .cards__title {

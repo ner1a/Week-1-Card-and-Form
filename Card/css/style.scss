@@ -44,7 +44,7 @@ body{
         -webkit-box-orient: vertical;
         overflow:hidden;
         font-size: small;
-
+        line-height: 20px;
     }
 
     &__title{
@@ -58,7 +58,7 @@ body{
         font-weight: 200;
         font-size: x-small;
         margin-bottom: 35px;
-            }
+        }
 
     &__read-more{
         position: absolute;
