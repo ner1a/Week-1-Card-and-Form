@@ -69,6 +69,7 @@ body {
 }
 
 .cards__read-more {
+  color: rgba(0, 0, 0, 0.45);
   position: absolute;
   bottom: 15px;
   letter-spacing: 1px;
@@ -81,6 +82,7 @@ body {
 }
 
 .cards__read-more:hover, .cards__read-more:focus {
+  color: black;
   font-size: large;
   outline: none;
 }

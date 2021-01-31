@@ -61,6 +61,7 @@ body{
         }
 
     &__read-more{
+        color: rgba(0, 0, 0, 0.450);
         position: absolute;
         bottom: 15px;
         letter-spacing: 1px;
@@ -70,6 +71,7 @@ body{
         font-weight: 400;
         transition: 100ms;
         &:hover,&:focus{
+            color: rgba(0, 0, 0, 1);
             font-size:large;
             outline:none;
             span{
