@@ -26,6 +26,7 @@ button{
         outline: none;
         background-color:var(--color);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.30);
+        transform: scale(1.05);
     }
 }
 
@@ -37,7 +38,7 @@ button{
     align-items: center;
     border: 1px solid transparent;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.080);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.100);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,9 +48,6 @@ button{
     
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.180);
-        .register__title{
-            color: var(--color);
-        }
     }
 
     &__edit{
@@ -69,9 +67,13 @@ button{
         }
         img{
             width: 40px;
-            &:hover{
-                cursor: pointer;
-                transform: scale(1.1);
+        }
+        a:hover,:focus{
+            outline:none;
+            img{
+                transform: scale(1.2);
+                border: 1px solid var(--color);
+                border-radius: 100%;
             }
         }
     }
@@ -89,6 +91,7 @@ button{
         &:hover,&:focus{
             border-color: var(--color);
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.30);
+            transform: scale(1.05);
             &::placeholder{
                 color: var(--color);
             }
@@ -111,6 +114,7 @@ button{
         color: var(--color-span);
         margin-left: 5px;
         &:hover,&:focus{
+            outline: auto;
             outline-color: var(--color);
             -moz-outline-radius: 100px;
             color: var(--color);

@@ -31,6 +31,8 @@ button:hover, button:focus {
   background-color: var(--color);
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .text {
@@ -43,8 +45,8 @@ button:hover, button:focus {
           align-items: center;
   border: 1px solid transparent;
   border-radius: 40px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,10 +65,6 @@ button:hover, button:focus {
 .register:hover {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
-}
-
-.register:hover .register__title {
-  color: var(--color);
 }
 
 .register__edit {
@@ -92,10 +90,15 @@ button:hover, button:focus {
   width: 40px;
 }
 
-.register__icon img:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.register__icon a:hover, .register__icon :focus {
+  outline: none;
+}
+
+.register__icon a:hover img, .register__icon :focus img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 1px solid var(--color);
+  border-radius: 100%;
 }
 
 .register__input {
@@ -114,6 +117,8 @@ button:hover, button:focus {
   border-color: var(--color);
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .register__input:hover::-webkit-input-placeholder, .register__input:focus::-webkit-input-placeholder {
@@ -162,6 +167,7 @@ button:hover, button:focus {
 }
 
 .register__sign-in:hover, .register__sign-in:focus {
+  outline: auto;
   outline-color: var(--color);
   -moz-outline-radius: 100px;
   color: var(--color);
